@@ -6,12 +6,11 @@
 [![Recharts](https://img.shields.io/badge/Recharts-Time--Series-22C55E?style=for-the-badge)](https://recharts.org/)
 [![Vitest](https://img.shields.io/badge/Vitest-Unit_%26_Async_Tests-6E9F18?style=for-the-badge&logo=vitest)](https://vitest.dev/)
 
-> **Personal Engineering Showcase Project**  
 High-frequency telemetry dashboard rendering live device & cluster metrics with automatic reconnection resilience, exponential backoff (1s -> 2s -> 4s -> 8s), virtualized log feeds, severity filters, and sliding window chart streaming.
 
 ---
 
-## 🎯 What Recruiters & Engineering Managers Will See
+## 🎯 Key Architectural Highlights
 
 - **Resilient Real-Time Architecture**: Connection state machine (`CONNECTED` | `RECONNECTING` | `DISCONNECTED`) with heartbeats and automated reconnection retries.
 - **Fault-Tolerant Exponential Backoff**: Prevents server thundering herd problems during node disconnects by backing off exponentially ($2^n$ seconds).
